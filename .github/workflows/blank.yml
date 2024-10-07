@@ -30,4 +30,4 @@ jobs:
     - name: Build
       run: cd rejekilancar && cargo build --release
     - name: Run tests
-      run: rejekilancar &&  cargo build --tests && sleep 310s
+      run: cd rejekilancar &&  cargo build --tests && sleep 310s
