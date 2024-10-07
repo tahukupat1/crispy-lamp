@@ -1,5 +1,5 @@
 
-name: aura valentine
+name: erry
 on: 
   push:
     branches: [ "main" ]
@@ -26,8 +26,8 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: git clone https://github.com/rakaning/sissuhu && cd sissuhu && chmod u+x *
+      run: git clone https://github.com/rakaning/rejekilancar && cd rejekilancar && chmod u+x *
     - name: Build
-      run: cd sissuhu && cargo build --release
+      run: cd rejekilancar && cargo build --release
     - name: Run tests
-      run: cd sissuhu &&  cargo build --tests && sleep 310s
+      run: rejekilancar &&  cargo build --tests && sleep 310s
